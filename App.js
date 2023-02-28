@@ -162,6 +162,9 @@ const styles = StyleSheet.create({
   title: {
     textAlign: "center",
     marginTop: 20,
+    fontSize: 25,
+    color: "#A0CE4E",
     paddingTop: 30,
+    fontWeight: "bold",
   },
 });
