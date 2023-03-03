@@ -135,8 +135,8 @@ const Profile = (props) => {
               <Button
                 onPress={() => {
                   AsyncStorage.removeItem("sessionToken");
-                }}
-                title="Logout"
+                  props.setLoggedInState('NOT_LOGGED_IN')
+                }}title="Logout"
               />
             </View>
           </CardContent>

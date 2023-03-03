@@ -60,7 +60,7 @@ const App = () => {
   if (isFirstLaunch == true && loggedInState != loggedInStates.LOGGED_IN) {
     return <OnboardingScreen setFirstLaunch={setFirstLaunch} />;
   } else if (loggedInState == loggedInStates.LOGGED_IN) {
-    return <Navigation />;
+    return <Navigation loggedInState={loggedInStates}/>;
   } else if (loggedInState == loggedInStates.NOT_LOGGED_IN) {
     return (
       <View>
